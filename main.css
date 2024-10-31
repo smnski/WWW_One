@@ -1,0 +1,201 @@
+html, body {
+    margin: 0;    /* Remove default margin */
+    padding: 0;   /* Remove default padding */
+    height: 100%; /* Ensure body takes full height */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.main-1 {
+    display: flex; /* Align children in a row */
+    height: 100vh; /* Full viewport height */
+}
+
+.left-rectangle-container {
+    display: flex;
+    flex-direction: column; /* Direction of the flex axis / Aligns children vertically */
+    align-items: flex-start;
+    height: 100%; /* Set to 100% of the parent */
+    width: 50px;
+    background-color: lightgray;
+    flex: 0 0 auto; /* Prevents it from shrinking and maintains its width */
+}
+
+.logo-and-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centers text within the paragraphs */
+}
+
+.logo-and-info img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.p-large {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: white;
+}
+
+.p-small {
+    font-size: 18px;
+    margin: 20px 0 5px 0;
+    color: lightslategray;
+}
+
+.buttons-container {
+    width: 100%;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.808);
+    margin-top: 10px;
+    padding-top: 10px; /* Space at the top */
+    padding-bottom: 10px; /* Space at the bottom */
+    display: grid;
+
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
+    gap: 3px; /* Space between grid items */
+}
+
+/*--------------------- Page buttons ---------------------*/
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%; /* Fill height of grid cell */
+    background-color: grey;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+    position: relative; /* For absolute positioning of the border */
+}
+
+.button::before, .button::after { /* Adding a pseudo-element that's part of the existing button element, but styled in a different way */
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px; /* Height of the border */
+    background: black; /* Color of the border */
+}
+
+.button::before { /* Top border */ 
+    top: 0; /* Positioning the first pseudo-border on top */
+}
+
+.button::after { /* Bottom border */
+    bottom: 0; /* Positioning the first pseudo-border on bottom */
+}
+
+.button:hover {
+    background-color: darkgrey; /* Change background on hover */
+}
+/*--------------------- /Page buttons ---------------------*/
+
+/* Container for the 3 social buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adds spacing between buttons */
+    height: 100%; /* Fill the grid cell height */
+}
+
+/*--------------------- Social buttons ---------------------*/
+.social-button {
+    width: 40px;
+    height: 40px;
+    background-color: grey; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    background-size: contain; /* Scale the image to fit inside */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+}
+
+/* Hover effect to change button color */
+.social-button:hover {
+    background-color: darkgrey;
+}
+
+/* Custom styles for each platform icon */
+.social-button.github {
+    background-image: url("./resources/logo.png");
+}
+
+.social-button.linkedin {
+    background-image: url("./resources/logo.png");
+}
+
+.social-button.twitter {
+    background-image: url("./resources/logo.png");
+}
+/*--------------------- /Social buttons ---------------------*/
+
+.remaining-container {
+    position: relative;
+    height: 100%; /* Takes the full height of the parent */
+    flex: 1; /* Allow it to take remaining space */
+    background-color: lightgray;
+    box-sizing: border-box;
+    padding: 20px; /* Padding for inner content */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hello-text {
+    font-size: 5em;
+    margin: 0;
+    user-select: none;
+    padding: 0;
+    padding-left: 1.5em;
+    padding-top: 0.8em;
+}
+
+.hello-text p {
+    margin: 0;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+.big-W-1 {
+    letter-spacing: -0.6em;
+    color: rgb(47, 187, 152);
+    user-select: none;
+}
+
+.big-W-2 {
+    color: rgb(180, 45, 45);
+    user-select: none;
+}
+
+.sub-hello-text {
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+.pay-button {
+    padding: 14px 60px; /* Padding for the button */
+    background-color: transparent; /* Make the background transparent */
+    color: green; /* Green text */
+    text-decoration: none; /* Remove underline */
+    border: 2px solid green; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 3em;
+    width: 150px; /* Additional space to the sides of the text */
+}
+
+/* Optional: Add a hover effect */
+.pay-button:hover {
+    background-color: green; /* Change background to green on hover */
+    color: white; /* Change text to white on hover */
+}
