@@ -1,71 +1,110 @@
 html, body {
-    margin: 0;    /* Remove default margin */
-    padding: 0;   /* Remove default padding */
-    height: 100%; /* Ensure body takes full height */
+    margin: 0;
+    padding: 0;
 }
 
 .main-1 {
-    display: flex; /* Align children in a row */
-    height: 100vh; /* Full viewport height */
+    display: flex;
+    min-height: 100vh;
 }
 
-/*----------------------------------- Master layout -----------------------------------*/
+/*----------------------------------- Left margin -----------------------------------*/
 
-.left-rectangle-container {
+.left-margin {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    width: 60px;
+    background-color: rgb(49, 44, 44);
+}
+
+.logo-container {
+    grid-row: 1; /* Place in the first row */
+    height: 5em;
+    width: 100%;
+    background-color: black;
     display: flex;
-    flex-direction: column; /* Direction of the flex axis / Aligns children vertically */
-    align-items: flex-start;
-    height: 100%; /* Set to 100% of the parent */
-    width: 50px;
-    background-color: lightgray;
-    flex: 0 0 auto; /* Prevents it from shrinking and maintains its width */
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+}
+
+.big-P-1 {
+    font-size: 2.5em;
+    color: rgb(47, 187, 152);
+    user-select: none;
+    letter-spacing: -0.6em;
+}
+
+.big-P-2 {
+    font-size: 2.5em;
+    color: rgb(180, 45, 45);
+    user-select: none;
+}
+
+.name {
+    font-size: 0.8em;
+    color: white;
+    user-select: none;
 }
 
 .navigation-buttons {
+    grid-row: 2; /* Place in the second row */
     width: 100%;
-    height: 280px;
     background-color: rgba(0, 0, 0, 0.808);
-    margin-top: 10px;
-    padding-top: 10px; /* Space at the top */
-    padding-bottom: 10px; /* Space at the bottom */
     display: grid;
 
     grid-template-columns: 1fr; /* 1 column */
-    grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
+    grid-template-rows: repeat(4, 1fr); /* 4 equal rows */
     gap: 3px; /* Space between grid items */
 }
 
+.home-button {
+    height: 40px; /* Uniform height */
+    display: flex; /* Flex to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+}
+
+.social-buttons {
+    grid-row: 3; /* Place in the third row */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.808);
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.twitter-button {
+    height: 30px; /* Uniform height */
+    display: flex; /* Flex to center content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+}
+
+/*----------------------------------- Main text -----------------------------------*/
+
 .remaining-container {
     position: relative;
-    height: 100%; /* Takes the full height of the parent */
     flex: 1; /* Allow it to take remaining space */
     background-color: lightgray;
     box-sizing: border-box;
-    padding: 20px; /* Padding for inner content */
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
 }
-
-/*----------------------------------- Buttons -----------------------------------*/
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 100%; /* Fill height of grid cell */
-    background-color: grey;
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Text color */
-    position: relative; /* For absolute positioning of the border */
-}
-
-.button:hover {
-    background-color: darkgrey; /* Change background on hover */
-}
-
-/*----------------------------------- Main text -----------------------------------*/
 
 .hello-text {
     font-size: 5em;
@@ -99,19 +138,19 @@ html, body {
 }
 
 .pay-button {
-    padding: 14px 60px; /* Padding for the button */
-    background-color: transparent; /* Make the background transparent */
-    color: green; /* Green text */
-    text-decoration: none; /* Remove underline */
-    border: 2px solid green; /* Green border */
+    padding: 14px 60px;
+    background-color: transparent;
+    color: green;
+    text-decoration: none;
+    border: 2px solid green;
     border-radius: 5px; /* Rounded corners */
-    font-size: 18px; /* Font size */
+    font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
     margin-top: 3em;
     width: 150px; /* Additional space to the sides of the text */
 }
 
 .pay-button:hover {
-    background-color: green; /* Change background to green on hover */
-    color: white; /* Change text to white on hover */
+    background-color: green;
+    color: white;
 }
