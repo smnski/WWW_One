@@ -221,6 +221,23 @@ html, body {
     margin-bottom: 6em;
 }
 
+/* ----------------------------------- Footer ----------------------------------- */
+.footer {
+    background-color: rgb(30, 27, 27);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ----------------------------------- Media ----------------------------------- */
 @media (min-width: 1200px) {
     .uj-logo {
         visibility: visible;
