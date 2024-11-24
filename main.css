@@ -1,4 +1,5 @@
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -6,15 +7,16 @@ html, body {
 .main-1 {
     display: flex;
     min-height: 100vh;
+    overflow: hidden;
 }
 
-/*----------------------------------- Left margin -----------------------------------*/
+/* ----------------------------------- Left margin ----------------------------------- */
 
 .left-margin {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
-    background-color: rgb(49, 44, 44);
+    background-color: rgb(30, 27, 27);
 }
 
 .logo-container {
@@ -117,7 +119,7 @@ html, body {
     gap: 5px;
 }
 
-.image-button {
+.small-button-with-image {
     height: 20px; /* Set the button size */
     border: none;
     padding: 0;
@@ -125,12 +127,54 @@ html, body {
     background: none; /* Remove default button background */
 }
 
-.button-image {
+.image-of-small-button {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.image-button:hover .button-image {
+.small-button-with-image:hover .image-of-small-button {
     content: url('./resources/home2.png');
+}
+
+/* ----------------------------------- Remaining space ----------------------------------- */
+.remaining-space {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex: 1;
+    background-color: rgb(53, 49, 49);
+    overflow-x: auto;
+}
+
+.main-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.main-text .big-P-1 {
+    color: rgb(47, 187, 152);
+    letter-spacing: -10em;
+    font-family: initial;
+    margin-right: -0.05em;
+}
+
+.main-text .big-P-2 {
+    color: rgb(180, 45, 45);
+    font-family: initial;
+}
+
+.sub-text {
+    color: white;
+}
+
+.uj-logo {
+    position: fixed;
+    right: 0;
+    max-width: 600px;
+    object-fit: contain;
 }
