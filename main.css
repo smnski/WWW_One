@@ -103,6 +103,10 @@ html, body {
     opacity: 1;
 }
 
+.home-button.current-page .home-image-1 {
+    content: url('./resources/home2.png');
+}
+
 .image-button
 .home-image-1
 .home-image-2 {
