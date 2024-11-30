@@ -7,8 +7,8 @@ html, body {
 }
 
 .main-1 {
+    flex: 1; /* Make this section expand to fill available space */
     display: flex;
-    min-height: 95vh;
     overflow: hidden;
 }
 
@@ -236,10 +236,7 @@ html, body {
     text-align: center;
     padding: 0.6em 0;
     font-size: 0.9em;
-    position: relative;
     width: 100%;
-    bottom: 0;
-    flex: 1;
 }
 
 .footer p {
