@@ -2,11 +2,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-1 {
     display: flex;
-    min-height: 100vh;
+    min-height: 95vh;
     overflow: hidden;
 }
 
@@ -64,7 +66,7 @@ html, body {
     gap: 15px;
 }
 
-.home-button {
+.navigation-button {
     height: 40px;
     display: flex;
     align-items: center;
@@ -77,35 +79,33 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
-.home-button:hover {
+.navigation-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.home-image-1 {
+.navigation-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
 
-.home-button:hover .home-image-1 {
+.navigation-button:hover .navigation-image {
     opacity: 0;
 }
 
-.home-button .name {
+.navigation-button .name {
     opacity: 0;
     color: white;
     transition: opacity 0.3s ease;
     position: absolute;
 }
 
-.home-button:hover .name {
+.navigation-button:hover .name {
     opacity: 1;
 }
 
-.image-button
-.home-image-1
-.home-image-2 {
+.navigation-image {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -234,11 +234,12 @@ html, body {
     background-color: rgb(30, 27, 27);
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 0.6em 0;
     font-size: 0.9em;
     position: relative;
     width: 100%;
     bottom: 0;
+    flex: 1;
 }
 
 .footer p {
