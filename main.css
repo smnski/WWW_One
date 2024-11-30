@@ -103,10 +103,6 @@ html, body {
     opacity: 1;
 }
 
-.home-button.current-page .home-image-1 {
-    content: url('./resources/home2.png');
-}
-
 .image-button
 .home-image-1
 .home-image-2 {
@@ -124,11 +120,11 @@ html, body {
 }
 
 .small-button-with-image {
-    height: 20px; /* Set the button size */
+    height: 24px;
     border: none;
     padding: 0;
     cursor: pointer;
-    background: none; /* Remove default button background */
+    background: none;
 }
 
 .image-of-small-button {
@@ -137,8 +133,16 @@ html, body {
     object-fit: contain;
 }
 
-.small-button-with-image:hover .image-of-small-button {
-    content: url('./resources/home2.png');
+.git-button:hover .image-of-small-button {
+    content: url('./resources/git2.png');
+}
+
+.twt-button:hover .image-of-small-button {
+    content: url('./resources/twt2.png');
+}
+
+.lnk-button:hover .image-of-small-button {
+    content: url('./resources/lnk2.png');
 }
 
 /* ----------------------------------- Remaining space ----------------------------------- */
