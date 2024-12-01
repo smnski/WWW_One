@@ -7,7 +7,7 @@ html, body {
 }
 
 .main-1 {
-    flex: 1; /* Make this section expand to fill available space */
+    flex: 1;
     display: flex;
     overflow: hidden;
 }
@@ -158,79 +158,6 @@ html, body {
     padding: 10px;
     overflow-x: auto;
     justify-content: space-between;
-}
-
-.text-one {
-    margin-left: 5em;
-}
-
-.main-text {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 4em;
-    font-weight: bold;
-    min-width: 200px;
-    min-height: 100px;
-    display: inline-block;
-    line-height: 1.5em;
-}
-
-.name-2,
-.logo-2 {
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.main-text .big-S-1 {
-    color: rgb(47, 187, 152);
-    letter-spacing: -10em;
-    font-family: initial;
-    margin-right: -0.1em;
-}
-
-.main-text .big-S-2 {
-    color: rgb(180, 45, 45);
-    font-family: initial;
-    margin-right: -0.185em;
-}
-
-.main-text .big-S-1,
-.main-text .big-S-2 {
-    font-size: 1.6em;
-}
-
-.sub-text {
-    color: rgb(115, 110, 110);
-    font-size: 1.2em;
-    margin-top: 1em;
-    margin-bottom: 3.5em;
-}
-
-.contact-button {
-    padding: 14px 60px;
-    background-color: transparent;
-    color: green;
-    text-decoration: none;
-    border: 2px solid green;
-    border-radius: 5px; /* Rounded corners */
-    font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
-    width: 150px; /* Additional space to the sides of the text */
-}
-
-.contact-button:hover {
-    background-color: rgb(1, 66, 1);
-    color: white;
-}
-
-.uj-logo {
-    width: 18rem;
-    height: auto;
-    visibility: hidden;
-    right: 0;
-    padding: 20px;
-    margin-right: 13em;
-    margin-bottom: 6em;
 }
 
 /* ----------------------------------- Footer ----------------------------------- */
