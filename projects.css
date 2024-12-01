@@ -160,6 +160,31 @@ html, body {
     justify-content: space-between;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    color: white;
+}
+
+.projects h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    color: rgb(47, 187, 152);
+}
+
+.projects ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.projects li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
 /* ----------------------------------- Footer ----------------------------------- */
 .footer {
     background-color: rgb(30, 27, 27);
