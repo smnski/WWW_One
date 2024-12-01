@@ -4,12 +4,13 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow: auto; /* Allow scrolling */
 }
 
 .main-1 {
     flex: 1;
     display: flex;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* ----------------------------------- Left margin ----------------------------------- */
@@ -19,6 +20,9 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
     background-color: rgb(30, 27, 27);
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 .logo-container {
@@ -155,16 +159,21 @@ html, body {
     background-color: rgb(53, 49, 49);
     display: flex;
     align-items: center;
-    padding: 10px;
-    overflow-x: auto;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align at the top */
+    flex-direction: column;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-bottom: 20px; /* Add some space at the bottom */
+}
+
+.main-header {
+    font-size: 4em;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding: 2em;
+    gap: 1.5em;
+    padding: 1em;
     color: white;
 }
 
@@ -193,6 +202,7 @@ html, body {
     padding: 0.6em 0;
     font-size: 0.9em;
     width: 100%;
+    z-index: 10;
 }
 
 .footer p {
