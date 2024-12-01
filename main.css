@@ -51,6 +51,10 @@ html, body {
     user-select: none;
 }
 
+.logo .big-S-1 {
+    margin-right: -0.02em;
+}
+
 .name {
     font-size: 0.8em;
     color: white;
