@@ -164,7 +164,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
     width: 100%;
 }
 
@@ -183,7 +183,7 @@ html, body {
 }
 
 .skills-table th {
-    background-color: rgb(47, 187, 152);
+    background-color: rgb(28, 29, 29);
     color: white;
     font-weight: bold;
 }
