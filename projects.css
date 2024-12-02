@@ -159,14 +159,16 @@ html, body {
     background-color: rgb(53, 49, 49);
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align at the top */
+    justify-content: flex-start;
     flex-direction: column;
     overflow-y: auto; /* Allow vertical scrolling */
-    padding-bottom: 20px; /* Add some space at the bottom */
+    padding-bottom: 20px;
 }
 
 .main-header {
-    font-size: 4em;
+    font-size: 5em;
+    letter-spacing: 0.04em;
+    color: rgb(21, 21, 21);
 }
 
 .projects {
@@ -180,7 +182,7 @@ html, body {
 .projects h1 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
-    color: rgb(47, 187, 152);
+    color: rgb(137, 129, 131);
 }
 
 .projects ul {
@@ -192,6 +194,8 @@ html, body {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 0.5em;
+    max-width: 500px; /* Set the max width to control when the text breaks */
+    word-wrap: break-word; /* Allow the text to wrap within the max width */
 }
 
 /* ----------------------------------- Footer ----------------------------------- */
