@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    overflow: auto; /* Allow scrolling */
 }
 
 .main-1 {
@@ -18,12 +19,10 @@ html, body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
-    height: 100%;
     background-color: rgb(30, 27, 27);
-    position: fixed; /* Position it absolutely */
-    z-index: 10; /* Higher than the footer to ensure it overlaps */
-    top: 0; /* Align it to the top of the viewport */
-    bottom: 0; /* Stretch it to the bottom */
+    position: sticky;
+    top: 0;
+    height: 100vh;
 }
 
 .logo-container {
@@ -126,7 +125,6 @@ html, body {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
-    margin-bottom: 20px;
 }
 
 .small-button-with-image {
@@ -160,11 +158,9 @@ html, body {
     flex: 1;
     background-color: rgb(53, 49, 49);
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    overflow-y: auto; /* Allow vertical scrolling */
-    padding-bottom: 20px;
+    justify-content: center;
+    padding: 0 50px;
+    overflow-x: hidden;
 }
 
 .container {
@@ -189,7 +185,6 @@ html, body {
     margin: 0;
     text-align: center;
     font-size: 3em;
-    color: rgb(137, 129, 131);
 }
 
 .content {
@@ -199,10 +194,6 @@ html, body {
     justify-content: flex-start;
     margin-top: 10px;
     text-align: left;
-}
-
-.content h1{
-    color: rgb(0, 0, 0);
 }
 
 ul {
@@ -225,14 +216,12 @@ li {
     padding: 0.6em 0;
     font-size: 0.9em;
     width: 100%;
-    position: relative;
-    z-index: 5; /* Lower than left-margin */
+    z-index: 10;
 }
 
 .footer p {
     margin: 0;
 }
-
 
 /* ----------------------------------- Media ----------------------------------- */
 @media (min-width: 1200px) {
