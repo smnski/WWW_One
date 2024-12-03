@@ -186,6 +186,7 @@ html, body {
     margin: 0;
     text-align: center;
     font-size: 3em;
+    color: rgb(137, 129, 131);
 }
 
 .content {
@@ -195,6 +196,10 @@ html, body {
     justify-content: flex-start;
     margin-top: 10px;
     text-align: left;
+}
+
+.content h1{
+    color: rgb(0, 0, 0);
 }
 
 ul {
