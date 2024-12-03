@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    overflow: auto; /* Allow scrolling */
 }
 
 .main-1 {
@@ -158,9 +157,11 @@ html, body {
     flex: 1;
     background-color: rgb(53, 49, 49);
     display: flex;
-    justify-content: center;
-    padding: 0 50px;
-    overflow-x: hidden;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: auto; /* Allow vertical scrolling */
+    padding-bottom: 20px;
 }
 
 .container {
@@ -222,6 +223,7 @@ li {
 .footer p {
     margin: 0;
 }
+
 
 /* ----------------------------------- Media ----------------------------------- */
 @media (min-width: 1200px) {
