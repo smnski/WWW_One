@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: rgb(53, 49, 49);
     flex-direction: column;
     overflow: auto; /* Allow scrolling */
 }
@@ -20,10 +21,10 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
     background-color: rgb(30, 27, 27);
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 100vh;
-    z-index: 100;
+    z-index: 10;
 }
 
 .logo-container {
@@ -33,7 +34,7 @@ html, body {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -126,6 +127,7 @@ html, body {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
+    padding-bottom: 15px;
 }
 
 .small-button-with-image {
@@ -160,8 +162,9 @@ html, body {
     background-color: rgb(53, 49, 49);
     display: flex;
     justify-content: center;
-    padding: 0 50px;
     overflow-x: hidden;
+    /* Because left-margin.width = 60px */
+    padding: 0 50px 0 60px;
 }
 
 .container {
@@ -222,6 +225,7 @@ li {
     padding: 0.6em 0;
     font-size: 0.9em;
     width: 100%;
+    z-index: 1;
     z-index: 1;
 }
 

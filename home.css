@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color: rgb(53, 49, 49);
     flex-direction: column;
 }
 
@@ -19,6 +20,10 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
     background-color: rgb(30, 27, 27);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
 }
 
 .logo-container {
@@ -28,7 +33,7 @@ html, body {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -121,6 +126,7 @@ html, body {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
+    padding-bottom: 15px;
 }
 
 .small-button-with-image {
@@ -155,9 +161,10 @@ html, body {
     background-color: rgb(53, 49, 49);
     display: flex;
     align-items: center;
-    padding: 10px;
     overflow-x: auto;
     justify-content: space-between;
+    /* Because left-margin.width = 60px */
+    padding: 10px 10px 10px 60px;
 }
 
 .text-one {
@@ -241,6 +248,7 @@ html, body {
     padding: 0.6em 0;
     font-size: 0.9em;
     width: 100%;
+    z-index: 1;
 }
 
 .footer p {

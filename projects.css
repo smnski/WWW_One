@@ -4,6 +4,7 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: rgb(53, 49, 49);
     overflow: auto; /* Allow scrolling */
 }
 
@@ -20,9 +21,10 @@ html, body {
     grid-template-rows: 1fr 1fr 1fr;
     width: 60px;
     background-color: rgb(30, 27, 27);
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 100vh;
+    z-index: 10;
 }
 
 .logo-container {
@@ -125,6 +127,7 @@ html, body {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
+    padding-bottom: 15px;
 }
 
 .small-button-with-image {
@@ -163,6 +166,7 @@ html, body {
     flex-direction: column;
     overflow-y: auto; /* Allow vertical scrolling */
     padding-bottom: 20px;
+    padding-left: 60px; /* Because left-margin.width = 60px */
 }
 
 .main-header {
@@ -206,7 +210,7 @@ html, body {
     padding: 0.6em 0;
     font-size: 0.9em;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
 }
 
 .footer p {
